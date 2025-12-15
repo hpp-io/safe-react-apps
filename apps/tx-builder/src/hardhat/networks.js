@@ -51,6 +51,11 @@ const VOLTA_CONFIG = {
   url: 'https://volta-rpc.energyweb.org',
 }
 
+const HPP_SEPOLIA_CONFIG = {
+  ...sharedConfig,
+  url: 'https://sepolia.hpp.io',
+}
+
 const networks = {
   hardhat: {},
   localhost: {},
@@ -66,6 +71,9 @@ const networks = {
   rinkeby: RINKEBY_CONFIG,
   goerli: GOERLI_CONFIG,
   volta: VOLTA_CONFIG,
+
+  // hpp
+  hpp_sepolia: HPP_SEPOLIA_CONFIG,
 }
 
 module.exports = networks
