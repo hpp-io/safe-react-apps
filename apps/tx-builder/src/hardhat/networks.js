@@ -51,6 +51,11 @@ const VOLTA_CONFIG = {
   url: 'https://volta-rpc.energyweb.org',
 }
 
+const HPP_MAINNET_CONFIG = {
+  ...sharedConfig,
+  url: 'https://mainnet.hpp.io',
+}
+
 const HPP_SEPOLIA_CONFIG = {
   ...sharedConfig,
   url: 'https://sepolia.hpp.io',
@@ -73,6 +78,7 @@ const networks = {
   volta: VOLTA_CONFIG,
 
   // hpp
+  hpp_mainnet: HPP_MAINNET_CONFIG,
   hpp_sepolia: HPP_SEPOLIA_CONFIG,
 }
 
